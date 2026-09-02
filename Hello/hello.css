@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #222;
+    border-bottom: 2px solid #444;
+    padding-bottom: 8px;
+}
+
+img {
+    
+    display: block;
+    border-radius: 8px;
+    margin: 15px auto;
+}
+
+p {
+    margin: 15px 0;
+}
+
+ul {
+    background-color: #f4f4f4;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+#fireball {
+    position: fixed;
+    top: 50%;
+    left: -50px;
+    font-size: 40px;
+    display: none;
+}
+
+@keyframes flyAcross {
+    from { left: -50px; }
+    to { left: 110%; }
+}
+
+.flying {
+    display: block !important;
+    animation: flyAcross 1.5s linear;
+}
